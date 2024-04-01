@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>N-Squared Puzzle Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main id="game-container">
+        <h1>Puzzle Game</h1>
+        <div id="game-menu" class="game-menu">
+            <button id="start-game" class="btn">Start Game</button>
+            <button id="quit-game" class="btn">Quit Game</button>
+            <button id="high-score-btn" class="btn">High Scores</button>
+            <label for="difficulty" class="difficulty-label">Difficulty:</label>
+            <select id="difficulty" class="difficulty-select">
+                <option value="easy">Easy</option>
+                <option value="medium" selected>Medium</option>
+                <option value="hard">Hard</option>
+            </select>
+        </div>
+        <div id="game-board" class="game-board"></div>
+        <div id="timer">0:00</div>
+        <div id="high-scores" class="high-scores"></div>
+    </main>
+
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close-button">×</span>
+            <h2>Game Over</h2>
+            <p>Thank you for playing. Hope to see you again!</p>
+        </div>
+    </div>
+
+    <div id="victory-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <h2>Congratulations! You solved the puzzle!</h2>
+            <button id="restart-game">Restart Game</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
